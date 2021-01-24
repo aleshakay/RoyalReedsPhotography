@@ -3,12 +3,12 @@ import {
 BrowserRouter as Router,
 Route
 } from 'react-router-dom';
-import './App.css';
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import ArticlePage from './pages/ArticlePage';
-import ArticlesList from './pages/ArticlesList';
-import NavBar from '../src/shared/NavBar';
+import './App.scss';
+import HomePage from '../pages/HomePage';
+import AboutPage from '../pages/AboutPage';
+import ArticlePage from '../pages/ArticlePage';
+import ArticlesList from '../pages/ArticlesList';
+import NavBar from '../shared/NavBar';
 
 
 
