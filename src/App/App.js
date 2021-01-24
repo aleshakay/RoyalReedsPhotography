@@ -26,7 +26,6 @@ function App() {
           <Route path="/about" component={AboutPage} />
           <Route path="/articles-list" component={ArticlesList} />
           <Route path="/article" component={ArticlePage} />
-          <h1>We now have Auth!</h1>
           <AmplifySignOut />
         </div>  
       </div>
