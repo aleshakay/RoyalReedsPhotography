@@ -3,6 +3,7 @@ import {
 BrowserRouter as Router,
 Route
 } from 'react-router-dom';
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
 import './App.scss';
 import HomePage from '../pages/HomePage';
 import AboutPage from '../pages/AboutPage';
@@ -22,10 +23,12 @@ function App() {
           <Route path="/about" component={AboutPage} />
           <Route path="/articles-list" component={ArticlesList} />
           <Route path="/article" component={ArticlePage} />
+          <h1>We now have Auth!</h1>
+          <AmplifySignOut />
         </div>  
       </div>
     </Router>
   );
 }
 
-export default App;
+export default withAuthenticator(App);

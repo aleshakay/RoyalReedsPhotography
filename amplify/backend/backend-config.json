@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "royalreedsphotographyb973725d": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
