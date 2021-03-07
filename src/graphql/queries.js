@@ -32,3 +32,34 @@ export const listNotes = /* GraphQL */ `
     }
   }
 `;
+export const getImage = /* GraphQL */ `
+  query GetImage($id: ID!) {
+    getImage(id: $id) {
+      id
+      name
+      description
+      image
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const listImages = /* GraphQL */ `
+  query ListImages(
+    $filter: ModelImageFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listImages(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        name
+        description
+        image
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+  }
+`;

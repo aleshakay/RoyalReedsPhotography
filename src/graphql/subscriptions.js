@@ -37,3 +37,39 @@ export const onDeleteNote = /* GraphQL */ `
     }
   }
 `;
+export const onCreateImage = /* GraphQL */ `
+  subscription OnCreateImage {
+    onCreateImage {
+      id
+      name
+      description
+      image
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onUpdateImage = /* GraphQL */ `
+  subscription OnUpdateImage {
+    onUpdateImage {
+      id
+      name
+      description
+      image
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onDeleteImage = /* GraphQL */ `
+  subscription OnDeleteImage {
+    onDeleteImage {
+      id
+      name
+      description
+      image
+      createdAt
+      updatedAt
+    }
+  }
+`;

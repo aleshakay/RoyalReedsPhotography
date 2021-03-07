@@ -4,3 +4,10 @@ type Note @model {
   description: String
   image: String
 }
+
+type Image @model {
+  id: ID!
+  name: String!
+  description: String
+  image: String
+}
