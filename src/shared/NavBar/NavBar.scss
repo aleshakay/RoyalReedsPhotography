@@ -66,16 +66,26 @@
     display: none;
   }
 }
-
 @media (min-width: 703px) {
   .nav-icon {
     display: none;
   }
 }
-
 .Nav-space {
   flex: 1;
 }
 .Nav__link{
   color: white;
 }
+.HPTitleValue{
+
+}
+
+// @media screen and (max-width: 44em) {
+//   .nav-small{
+//     display: block
+//   }
+//   .nav{
+//     display: none;
+//   }
+// }

@@ -11,6 +11,8 @@ import ArticlesList from '../pages/ArticlesList';
 import NavBar from '../shared/NavBar/NavBar';
 import SideNavBar from '../shared/SideNavBar/SideNavBar';
 import BackDrop from '../shared/BackDrop/BackDrop';
+import Header from '../shared/Header/Header';
+import Gallery from '../pages/Gallery/Gallery'
 import './App.scss';
 
 const initialState = {
@@ -39,18 +41,13 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          <NavBar open={this.handleOpen} />
-          {this.state.sideBarOpen ? (
-          <div>
-              <BackDrop close={this.handleClose} />{" "}
-            </div>
-          ) : null}
-        <SideNavBar close={this.handleClose} display={this.state.sideBarOpen} />
+        <Header /> 
           <div style = {{marginTop: "60px", marginLeft: "9px" }}>
             <Route path="/" component={HomePage} exact />
             <Route path="/about" component={AboutPage} />
             <Route path="/articles-list" component={ArticlesList} />
             <Route path="/article" component={ArticlePage} />
+            <Route path="/gallery" component={Gallery} />
           </div>  
         </Router>
       </div>

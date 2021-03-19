@@ -1,0 +1,14 @@
+{
+    "gridImage1": {
+      "name": "wedding",
+      "description": "wedding image."
+    },
+    "gridImage2": {
+      "name": "Bears",
+      "description": "big and fluffy"
+    },
+    "gridImage3": {
+      "name": "sports",
+      "description": "A board with lots of trucks"
+    }
+  }

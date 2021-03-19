@@ -9,6 +9,7 @@ const NavBar = ({ open }) => {
         <div className="nav">
           <div onClick={open} className="Nav-Icon">
           <i className="material-icons">menu</i>
+          <h1 className='HPTitleValue'>Royal Reed's Photography</h1>
           </div>
             <div className="Nav-space" />
             <div className="Nav-items">
