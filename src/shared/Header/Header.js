@@ -43,7 +43,7 @@ const headersData = [
 
 const useStyles = makeStyles((theme) => ({
   header: {
-    paddingRight: "79px",
+    paddingRight: "69px",
     paddingLeft: "118px",
     color: "#8b9dc3",
     "@media (max-width: 900px)": {
@@ -59,13 +59,13 @@ const useStyles = makeStyles((theme) => ({
   menuButton: {
     fontFamily: "Open Sans, sans-serif",
     fontWeight: 700,
-    size: "18px",
+    size: "20px",
     marginLeft: "38px",
   },
   toolbar: {
     display: "flex",
     justifyContent: "space-between",
-    backgroundColor: "#8b9dc3",
+    backgroundColor: "#8b9dc3",    
   },
   drawerContainer: {
     padding: "20px 30px",
@@ -146,7 +146,9 @@ export default function Header() {
             component: RouterLink,
             to: href,
             color: "inherit",
-            style: { textDecoration: "none" },
+            style: { 
+              textDecoration: "none",
+           },
             key: label,
           }}
         >
@@ -157,7 +159,7 @@ export default function Header() {
   };
 
   const royalreedsphoto  = (
-    <Typography variant="h6" component="h1" className={logo}>
+    <Typography variant="h4" component="h1" className={logo}>
       Royal Reed's Photo
     </Typography>
   );
@@ -183,7 +185,7 @@ export default function Header() {
  
   return (
     <header >
-      <AppBar className = {header} >
+      <AppBar className = {header}  position="fixed">
         {mobileView ? displayMobile() : displayDesktop()}
       </AppBar>
     </header>
